@@ -14,8 +14,8 @@ def short_url(longurl, attempt=0):
         return longurl
     i = 0 if len(shorteneres_list) == 1 else randrange(len(shorteneres_list))
     _shorten_dict = shorteneres_list[i]
-    _shortener = _shorten_dict['v2.kpslink.in']
-    _shortener_api =  _shorten_dict['46fe07c2d3b551fd5ff32e113cc55459849ad73c']
+    _shortener = _shorten_dict['domain']
+    _shortener_api =  _shorten_dict['api_key']
     cget = create_scraper().request
     disable_warnings()
     try:
