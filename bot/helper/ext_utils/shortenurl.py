@@ -14,8 +14,8 @@ def short_url(longurl, attempt=0):
         return longurl
     i = 0 if len(shorteneres_list) == 1 else randrange(len(shorteneres_list))
     _shorten_dict = shorteneres_list[i]
-    _shortener = _shorten_dict['domain']
-    _shortener_api =  _shorten_dict['api_key']
+    _shortener = _shorten_dict['gplinks.in']
+    _shortener_api =  _shorten_dict['c6b0ce0cb3ecc15124270cac6214900831ee3842']
     cget = create_scraper().request
     disable_warnings()
     try:
